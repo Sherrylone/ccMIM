@@ -23,6 +23,7 @@ spring.submit arun -n 32 --ntasks-per-node=8 --gres=gpu:8 --cpus-per-task=5 --jo
   --output_dir $ccMIM/output/\
   --log_dir $ccMIM/output/\
   --mae false\
+  --accum_iter 4\
   --contrastive \
   --resume" &
 ```
