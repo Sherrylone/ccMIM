@@ -14,7 +14,7 @@ spring.submit arun -n 32 --ntasks-per-node=8 --gres=gpu:8 --cpus-per-task=5 --jo
  "python $ccMIM/submit_pretrain.py\
   --batch_size 32\
   --epochs 800\
-  --model mae_vit_base_patch16\
+  --model ccmim_vit_base_patch16\
   --mask_ratio 0.75\
   --world_size 32\
   --warmup_epochs 40 \
