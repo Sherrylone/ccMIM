@@ -3,7 +3,7 @@
 Code of ICLR 23 paper "[Contextual Image Masking Modeling via Synergized Contrasting without View Augmentation for Faster and Better Visual Pretraining](https://openreview.net/pdf?id=A3sgyt4HWp)"
 
 
-![ccMIM](https://raw.githubusercontent.com/Sherrylone/sherrylone.github.io/main/figures/ccmim.png?token=GHSAT0AAAAAAB6QMNG5YWHAIG42QUH4VCEQY7TH7WA)
+![ccMIM](./framework.png)
 
 This paper presents to attentively masked semantic-richer patches by importance sampling strategy.
 
