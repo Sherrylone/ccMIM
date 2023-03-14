@@ -30,7 +30,7 @@ class Attention(nn.Module):
         x = (attn @ v).transpose(1, 2).reshape(B, N, C)
         x = self.proj(x)
         x = self.proj_drop(x)
-        return avg_attn[:, 1:, 0], x
+        return avg_attn[:, 0, 1:], x
 
 class Block(nn.Module):
 
