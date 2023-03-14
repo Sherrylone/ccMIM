@@ -23,7 +23,7 @@ class Attention(nn.Module):
         q, k, v = qkv.unbind(0)   # make torchscript happy (cannot use tensor as tuple)
         attn = (q @ k.transpose(-2, -1)) * self.scale
         attn = attn.softmax(dim=-1)
-        avg_attn = attn.mean(dim=1)     # average on head
+        avg_attn = attn.mean(dim=1)     
 
         attn = self.attn_drop(attn)
 
