@@ -263,6 +263,8 @@ class AttnMaskedAutoencoderViT(nn.Module):
         return loss
 
     def forward_alignment_loss(self, cls_vis, cls_mask, T=0.5):
+        cls_vis = self.projector(cls_vis)
+        cls_mask = self.projector(cls_mask)
         cls_vis = nn.functional.normalize(cls_vis, dim=1)
         cls_mask = nn.functional.normalize(cls_mask, dim=1)
         # gather all targets
